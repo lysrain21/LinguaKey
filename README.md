@@ -56,7 +56,7 @@
 
 **Your Face Is Your Wallet**
 
-```
+```typescript
 // Powered by Solana Mobile Stack (SMS) Secure Element
 const wallet = await LinguaSol.create({
   biometric: 'faceID',
@@ -82,7 +82,7 @@ No passwords. No seed phrases. Just secure, biometric-based access — as natura
 
 **Turn Natural Language into On-Chain Action**
 
-```
+```rust
 // “Stake 50 SOL to Jito and auto-compound” ➝ Automatically:
 1. Interacts with Jito-Stake
 2. Sets up StreamFlow compounding
@@ -118,7 +118,7 @@ Your intent, executed — no code, no clicks.
 
 **Integrate in Minutes**
 
-```
+```typescript
 npm install @linguakit/solana
 import { Linguafy } from '@linguakit/solana'
 
