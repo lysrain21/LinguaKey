@@ -1,72 +1,154 @@
-# LinguaKey for Solana：语音优先的链上交互革命
+# LinguaKey for Solana: The Voice-First Future of On-Chain Interaction
 
 [![Solana Native](https://img.shields.io/badge/Built_for-Solana-14f195?logo=solana&logoColor=fff)](https://solana.com)
 
-**用生物特征解锁Solana生态，让每个交互请求都像发送消息一样简单**
 
----
 
-## 🚀 为什么选择Solana？
+**Unlock the power of Solana with your voice. Seamless, secure, human-speed blockchain interactions — powered by biometrics.**
 
-- ⚡ **速度匹配**：语音指令的实时性与Solana 400ms出块速度完美契合
-- 💸 **成本归零**：单笔交易<$0.0001，支持无限次AI Agent自动微交易
-- 🧩 **生态协同**：从DeFi到Mobile，全面适配Solana原生创新场景
 
----
 
-## 🔥 核心创新
+------
 
-### 1. Solana Passkey Wallet
-**生物特征即身份**
-```typescript
-// 使用SMS（Solana Mobile Stack）安全元件
+
+
+## **🚀 Why Solana?**
+
+
+
+
+
+- ⚡ **Real-Time Performance**
+
+  Voice commands align perfectly with Solana’s ultra-fast 400ms block time.
+
+- 💸 **Near-Zero Cost**
+
+  Execute microtransactions at <$0.0001 — ideal for AI agents and high-frequency tasks.
+
+- 🧩 **Built for Ecosystem Integration**
+
+  Native support for DeFi, mobile, and beyond — made to grow with Solana.
+
+
+
+
+
+------
+
+
+
+
+
+## **🔥 What Sets Us Apart**
+
+
+
+
+
+
+
+### **1. Solana Passkey Wallet**
+
+
+
+
+
+**Your Face Is Your Wallet**
+
+```
+// Powered by Solana Mobile Stack (SMS) Secure Element
 const wallet = await LinguaSol.create({
-  biometric: 'faceID', // 支持SecureElement模块
+  biometric: 'faceID',
   cluster: 'mainnet-beta'
 })
 ```
 
-### 2. Solana Voice Agent
+No passwords. No seed phrases. Just secure, biometric-based access — as natural as unlocking your phone.
 
-**链上意图翻译器**
 
-```rust
-// 解析自然语言到SeaLevel指令
-"质押50SOL到Jito并自动复投" ➔ Agent自动：
-1. 调用Jito-Stake程序
-2. 配置StreamFlow定期复投
-3. 生成Mango Markets风险对冲合约（可选）
+
+------
+
+
+
+
+
+### **2. Solana Voice Agent**
+
+
+
+
+
+**Turn Natural Language into On-Chain Action**
+
+```
+// “Stake 50 SOL to Jito and auto-compound” ➝ Automatically:
+1. Interacts with Jito-Stake
+2. Sets up StreamFlow compounding
+3. (Optional) Deploys Mango risk hedging
 ```
 
-▸ 支持场景：
+▸ Example use cases:
 
-- NFT批量挂单："在Tensor上以30%低于地板价挂售所有Mad Lads"
-- DeFi组合操作："用80%的USDC在Raydium做LP，剩余20%买入BONK"
 
-### 3. Solana SDK
-**五分钟集成指南**
 
-```bash
+- “List all Mad Lads on Tensor at 30% below floor.”
+- “Use 80% of my USDC to LP on Raydium, buy BONK with the rest.”
+
+
+
+
+
+Your intent, executed — no code, no clicks.
+
+
+
+------
+
+
+
+
+
+### **3. Developer SDK**
+
+
+
+
+
+**Integrate in Minutes**
+
+```
 npm install @linguakit/solana
-```
-```javascript
 import { Linguafy } from '@linguakit/solana'
 
 const solanaAgent = new Linguafy({
   connection: new Connection(RPC_ENDPOINT),
-  mobile: true, // 启用SMS压缩交易
-  plugins: [ // 生态插件市场
+  mobile: true, // SMS-optimized transactions
+  plugins: [
     '@linguakit/jito',
     '@linguakit/mango'
   ]
 })
 ```
 
-## 🌐 生态全景图
+Fast setup. Full control. Expand with ecosystem plugins.
+
+
+
+------
+
+
+
+
+
+## **🌐 Ecosystem Map**
+
+
 
 ```mermaid
 graph TD
-    A[LinguaKey SDK] --> B{Solana DeFi}
+    A[LinguaKey SDK] --> B{DeFi}
     A --> C{GameFi}
     A --> D{Mobile}
     B --> E[Jito]
@@ -76,6 +158,8 @@ graph TD
     D --> I[Solana Mobile Stack]
 ```
 
----
+------
 
-> "当Solana的闪电速度遇见自然语言交互，区块链第一次有了人类的速度" — 来自首批残障开发者测试反馈
+
+
+> “When Solana’s speed meets the human voice, blockchain finally speaks our language.”
