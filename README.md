@@ -54,21 +54,20 @@
 
 
 
-**生物识别安全：Face ID 与 Touch ID**
+**Biometric Security: Face ID & Touch ID**
 
 ```typescript
-// 利用设备内置的生物识别功能（例如 iPhone 上的 Face ID，MacBook 上的 Touch ID）
-// 在支持 Solana Mobile Stack (SMS) 的设备上，将利用安全元件。
-const wallet = await LinguaKey.create({ // 假设 LinguaKey 是 SDK 中的类名
-  // 以下是创建 Passkey 所需的参数
-  userIdString: 'user-unique-identifier-from-your-app', // 用于 Passkey 的唯一用户标识
-  userName: 'user-login-name',                         // 用户登录名，例如邮箱
-  userDisplayName: '用户的显示名称',                     // 将在生物识别提示中显示给用户
-  cluster: 'mainnet-beta'                             // 可选，默认为 Solana 主网
+
+const wallet = await LinguaKey.create({
+
+  userIdString: 'user-unique-identifier-from-your-app', 
+  userName: 'user-login-name',                     
+  userDisplayName: "User's display name", // User's display name             
+  cluster: 'mainnet-beta'                           
 });
 ```
 
-无需密码，无需助记词。只需通过您设备内置的安全生物识别验证（例如 iPhone 上的 Face ID 或 MacBook 上的 Touch ID），即可访问您的钱包——就像解锁您的设备一样自然。
+No passwords, no seed phrases. Access your wallet with your device's built-in secure biometric authentication (like Face ID on iPhone or Touch ID on MacBook) — as naturally as unlocking your device.
 
 
 
@@ -88,9 +87,9 @@ const wallet = await LinguaKey.create({ // 假设 LinguaKey 是 SDK 中的类名
 
 ```rust
 // “Stake 50 SOL to Jito and auto-compound” ➝ Automatically:
-1. Interacts with Jito-Stake
-2. Sets up StreamFlow compounding
-3. (Optional) Deploys Mango risk hedging
+// 1. Interacts with Jito-Stake
+// 2. Sets up StreamFlow compounding
+// 3. (Optional) Deploys Mango risk hedging
 ```
 
 ▸ Example use cases:
