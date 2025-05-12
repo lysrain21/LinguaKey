@@ -54,17 +54,21 @@
 
 
 
-**Your Face Is Your Wallet**
+**生物识别安全：Face ID 与 Touch ID**
 
 ```typescript
-// Powered by Solana Mobile Stack (SMS) Secure Element
-const wallet = await LinguaSol.create({
-  biometric: 'faceID',
-  cluster: 'mainnet-beta'
-})
+// 利用设备内置的生物识别功能（例如 iPhone 上的 Face ID，MacBook 上的 Touch ID）
+// 在支持 Solana Mobile Stack (SMS) 的设备上，将利用安全元件。
+const wallet = await LinguaKey.create({ // 假设 LinguaKey 是 SDK 中的类名
+  // 以下是创建 Passkey 所需的参数
+  userIdString: 'user-unique-identifier-from-your-app', // 用于 Passkey 的唯一用户标识
+  userName: 'user-login-name',                         // 用户登录名，例如邮箱
+  userDisplayName: '用户的显示名称',                     // 将在生物识别提示中显示给用户
+  cluster: 'mainnet-beta'                             // 可选，默认为 Solana 主网
+});
 ```
 
-No passwords. No seed phrases. Just secure, biometric-based access — as natural as unlocking your phone.
+无需密码，无需助记词。只需通过您设备内置的安全生物识别验证（例如 iPhone 上的 Face ID 或 MacBook 上的 Touch ID），即可访问您的钱包——就像解锁您的设备一样自然。
 
 
 
